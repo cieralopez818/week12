@@ -1,0 +1,43 @@
+{
+  "friendsRoster": [
+    {
+      "fullName": "Ciera Lopez",
+      "musicGenre": "rock",
+      "id": "1"
+    },
+    {
+      "fullName": "Isaac Lopez",
+      "musicGenre": "rap",
+      "id": "2"
+    },
+    {
+      "fullName": "Freddie Torres",
+      "musicGenre": "country",
+      "id": "3"
+    },
+    {
+      "fullName": "Cheyenne Martinez",
+      "musicGenre": "pop",
+      "id": "4"
+    },
+    {
+      "fullName": "Xavier Navarro",
+      "musicGenre": "blues",
+      "id": "5"
+    },
+    {
+      "fullName": "Adri Guetierrez",
+      "musicGenre": "electronic",
+      "id": "6"
+    },
+    {
+      "fullName": "Devon Arroyo",
+      "musicGenre": "funk",
+      "id": "7"
+    },
+    {
+      "fullName": "ciera",
+      "id": "9ritFSP"
+    }
+  ]
+}

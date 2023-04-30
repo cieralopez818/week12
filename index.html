@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week12lab</title>
+    <link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+</head>
+
+
+
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  text-align: center;
+  font-size: 40px;
+  border: 3px solid green;
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+  <p>FRIENDS AND MUSIC</p>
+</div>
+
+</body>
+</html>
+    <form>
+       <h2>Add New Friend and Their Music Genre</h2>
+        <div>
+            <label for="fullName">Full Name</label>
+            <input id="fullName" placeholder="Enter Name"/>
+        </div>
+        <div>
+            <label for="newGenre">Music Genre</label>
+            <input id="newGenre" placeholder="Music"/>
+        </div>
+    <button id="submitFriend">Submit</button>
+    </form>
+
+    <form>
+        <h2>Update Friends Music</h2>
+        <div>
+          <label for="updateId"> Friend Id</label>
+          <input id="updateId"/>
+      </div>
+        <div>
+            <label for="updateName"> Friend Name</label>
+            <input id="updateName"/>
+        </div>
+        <div>
+            <label for="updateGenre"> Friend Genre</label>
+            <input id="updateGenre"/>
+        </div>
+        <button id="updateFriend">Update</button>
+    </form>
+    <table>
+        <thead>
+            <th>Friend Id</th>
+            <th>Full Name</th>
+            <th>Music Genre</th>
+            <th>Delete Friend</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+ <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+  <!-- Popper CDN: For dropdowns, popovers, tooltips, etc-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap Script CDN -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Our script -->
+  <script src="./week12lab.js"></script>
+</body>
+</html>
