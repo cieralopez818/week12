@@ -28,6 +28,7 @@ $('#submitFriend').click(function () {
     }).then(render)
 })
 
+
 function deleteUser (id) {
     $.ajax(`${URL_ENDPOINT}/${id}`,{
         method: 'DELETE'
@@ -37,14 +38,15 @@ function deleteUser (id) {
 function updateUser (e) {
     e.preventDefault()
     let id = $('#updateId').val()
-
     $.ajax(`${URL_ENDPOINT}/${id}`, {
         method: 'PUT',
         data: {
             fullName: $('#updateName').val(),
             musicGenre: $('#updateGenre').val(),
         }
+        // console.log('when through method')
     }).then(render)
 }
 
 $('#updateFriend').click((e)=>updateUser(e))
+

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>week12lab</title>
+    <link rel="stylesheet" href="style.css">
     <link
     rel="stylesheet"
     href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
 </head>
-
 
 
 <body>
@@ -23,6 +23,7 @@
   font-size: 40px;
   border: 3px solid green;
 }
+
 </style>
 </head>
 <body>
@@ -31,47 +32,92 @@
   <p>FRIENDS AND MUSIC</p>
 </div>
 
+
+<div class="container text-center">
+  <div class="row" id="items-container"></div>
+</div>
+</div>
+
 </body>
 </html>
+
+<!-- bootstrap -->
     <form>
-       <h2>Add New Friend and Their Music Genre</h2>
+      <h3 id="solid-heading">Add New Friend and Their Music Genre</h3>
         <div>
+          <div class="border border-success p-2 mb-2">This is default success border
+
             <label for="fullName">Full Name</label>
-            <input id="fullName" placeholder="Enter Name"/>
+            <input id="fullName" placeholder="Enter Name"/> </div>
         </div>
         <div>
+          <div class="border border-success p-2" style="--bs-border-opacity: .5;">
+
             <label for="newGenre">Music Genre</label>
-            <input id="newGenre" placeholder="Music"/>
+            <input id="newGenre" placeholder="Music"/> </div>
+
         </div>
-    <button id="submitFriend">Submit</button>
+
+        <div class="d-grid gap-2 d-md-flex">
+          <button
+            onclick="addItem()"
+            id="submitFriend"
+            class="btn btn-secondary btn-sm"
+          >
+            Submit
+          </button>
+        </div>
+
+    <!-- <button class="submitFriend">Submit</button> -->
+
     </form>
 
     <form>
-        <h2>Update Friends Music</h2>
+        <h3>Update Friends Music</h3>
         <div>
+          <div class="border border-success p-2 mb-2">
+
           <label for="updateId"> Friend Id</label>
-          <input id="updateId"/>
+          <input id="updateId"/> </div>
       </div>
         <div>
+          <div class="border border-success p-2 mb-2 border-opacity-75">
+
             <label for="updateName"> Friend Name</label>
-            <input id="updateName"/>
+            <input id="updateName"/> </div>
         </div>
         <div>
+          <div class="border border-success p-2 mb-2 border-opacity-50"> 
+
             <label for="updateGenre"> Friend Genre</label>
-            <input id="updateGenre"/>
+            <input id="updateGenre"/> </div>
         </div>
-        <button id="updateFriend">Update</button>
+        <div class="d-grid gap-2 d-md-flex">
+          <button
+            id="updateFriend"
+            class="btn btn-secondary btn-sm"
+          >Update</button>
+        </div>
+
+
+        <!-- <button id="updateFriend">Update</button> -->
     </form>
+    <div class="home-images-div">
     <table>
         <thead>
-            <th>Friend Id</th>
-            <th>Full Name</th>
-            <th>Music Genre</th>
+           <th>Friend Id</th>
+            <th> Full Name</th>
+            <th> Music Genre</th>
             <th>Delete Friend</th>
         </thead>
         <tbody>
         </tbody>
     </table>
+
+</div>
+
+
+    
  <script
     src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
